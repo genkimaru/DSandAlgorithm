@@ -55,14 +55,10 @@ int main ()
    cout << "fun3 = " << fun3() << endl;
    cout << "fun3 = " << *fun3() << endl;
 
-   int input = 321;
-   cout << "input = " << & input  << endl;
-    cout << "fun4 = " << fun4(input) << endl;
-    cout << "input = " <<  input  << endl;
 
    //  cout << "fun5 = " << fun5(input) << endl;
 
-   // 不可变的指针， 常量指针。
+   //值 不可变的指针， 常量指针。
    const int * p ;
    p =  fun6();
    int d = 100;
