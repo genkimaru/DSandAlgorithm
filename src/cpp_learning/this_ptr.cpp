@@ -13,6 +13,7 @@ this->age = age;
 
 Person & addAge(int num){
 this->age += num;
+return *this;  // 如果没有加这个，默认就返回自身对象
 }
 
 int getAge(){
