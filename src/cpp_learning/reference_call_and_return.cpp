@@ -16,7 +16,7 @@ return a;
 }
 
 
-// 在函数前加入一个& ， 可以用 &函数名（） 的方式获取返回值地址。
+//返回引用的函数。在函数前加入一个& ， 可以用 &函数名（） 的方式获取返回值地址。
 int & fun2(){
 return a;
 }
@@ -47,9 +47,10 @@ int main ()
    cout << "经过 fun1后的返回值地址 " << &r1 << endl;
 
    //经过 int & func2()处理后 ， 返回的是原来实参
-   int r2 = fun2();
-   cout << "fun2 = " << r2 << endl;
-   cout << "&fun2（） = " << &fun2() << endl;
+   //需要注意的是 返回值声明同样需要用引用方式  int & 
+   int & r2 = fun2();
+   cout << "&r2 " << &r2 << endl;
+   cout << "& fun2（） = " << & fun2() << endl;
 
 // 经过  int * func3()处理后，返回原来实参的地址。
    int * r3 = fun3();
