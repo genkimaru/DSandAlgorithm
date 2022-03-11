@@ -55,6 +55,7 @@ int main()
     
 
     vector<int>::iterator it = find_if(v.begin(), v.end(), IsEven());
+    
 
     if (it == v.end())
     {

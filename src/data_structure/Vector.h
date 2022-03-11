@@ -2,6 +2,8 @@
 #define VECTOR_H
 
 #include "dsexceptions.h"
+// 加入后就可以识别NULL
+#include <stddef.h>
 
 template <typename Object>
 class Vector
